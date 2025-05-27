@@ -13,16 +13,16 @@ def cantidad_items() -> int:
 
 def validacion_item() -> str:
     """
-    Solicita un nombre de producto sin números.
+    Solicita un atributo.
 
     Returns:
-        str: Nombre válido del producto.
+        str: Nombre válido del atributo.
     """
-    producto = input("Ingrese nombre de productos (sin numeros): ")
+    producto = input("Ingrese nombre del atributo: ")
     while producto.isdigit() == True or len(producto) == 0:
         #or len(producto) < 5: por si necesito en alguna otra condicion - por ejemplo largo de un codigo y lo incluyo en el print tambien
-        print("Producto inválido..")
-        producto = input("Ingrese ingrese nombre de producto sin numeros: ")
+        print("Atributo inválido..")
+        producto = input("Ingrese atributo sin numeros: ")
     return producto
 
 
